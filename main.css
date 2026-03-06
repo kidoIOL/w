@@ -1,0 +1,843 @@
+body{
+     font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.header{
+    width: 100%;
+    padding: 20px 4px;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1000;
+    background: white;
+}
+/* Top contact bar */
+.top-contact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Main Navigation Layout */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333; /* The horizontal line */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Sub-navigation styling */
+.sub-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+    gap: 30px;
+}
+
+.sub-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the button to look like a normal nav link */
+.dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    padding: 0;
+    color:green;
+}
+
+/* Initially hide the dropdown content */
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 10px 0;
+    top: 100%; /* Positions it directly below the button */
+    left: 0;
+}
+.dropdown:hover .content {
+    display: block;
+}
+.dropdown .content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Add a hover effect for items inside the dropdown */
+.dropdown .content a:hover {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {   
+    color: #000;
+}
+.swiper .swiper-pagination-bullet-active {
+    background: #000;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+p.p1 {
+    font-size: 14px;
+    color: #333;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+h1.logo2 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.kido-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.kido-image{
+    width: 100%;
+    display: block;
+
+}
+.kido-text {
+    font-size: larger;
+    font-weight: 900;
+    color:white;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.outline-button {
+  background-color: white;
+  border: 2px solid #ffffff; 
+  color: white; 
+  padding: 10px 20px;
+  border-radius: 5px; 
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  box-shadow: all 0.3s ease;
+}
+.outline-button:hover {
+  background-color: #ffffff; 
+  color: white;  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust as needed */
+  background-color:white; /* Dark background to see the white button */
+}
+.explore-button {
+  background: transparent;      /* Makes it hollow */
+  border: 2px solid white;     /* Sets the outline */
+  color: white;                /* Sets the text color */
+  padding: 12px 40px;          /* Vertical and horizontal space */
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;         /* Creates that wide, elegant look */
+  text-transform: uppercase;   /* Ensures text is caps */
+  cursor: pointer;
+  transition: all 0.3s ease;   /* Smooth hover transition */
+}
+.explore-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.kido1-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.kido1-image{
+    width: 100%;
+    display: block;
+
+}
+.kido1-text {
+    font-size: larger;
+    font-weight: 900;
+    color:white;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.kido2-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.kido2-image{
+    width: 100%;
+    display: block;
+
+}
+.kido2-text {
+    font-size: larger;
+    font-weight: 900;
+    color:white;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.kido3-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.kido3-image{
+    width: 100%;
+    display: block;
+
+}
+.kido3-text {
+    font-size: larger;
+    font-weight: 900;
+    color:white;
+    position: absolute; /* Pins the text to the parent */
+    top: 70%;
+    right: 30%;
+    transform: translateY(-50%);
+}
+.kido4-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10 px 0;
+}
+.kido4-image{
+    width: 100%;
+    display: block;
+
+}
+.kido4-text {
+    font-size: larger;
+    font-weight: 900;
+    color:white;
+    position: absolute; /* Pins the text to the parent */
+    top: 60%;
+    right: 40%;
+    transform: translateY(-50%);
+}
+.kido5-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.kido5-image{
+    width: 100%;
+    display: block;
+
+}
+.kido5-text {
+    font-size: larger;
+    font-weight: 900;
+    color:#ffffff;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.gallery{
+display: inline-block;
+border: px solid #ccc;
+margin: px;
+ width: 32.90%;
+ position: relative;
+overflow: hidden;
+ border-radius: 15px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery:hover{ 
+border: 1px solid #000;
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.gallery img{
+width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+ transition: transform 0.5s ease;
+}
+.kido6-text {
+font-size: larger;
+font-weight: 900;
+color:yellow;
+position: absolute; /* Pins the text to the parent */
+top: 50%;
+ right: 5%;
+transform: translateY(-50%);
+}
+ .kido6-text a {
+ display: block;
+background: rgba(0, 0, 0, 0.6);  
+color: white;
+ text-decoration: none;
+ font-size: 24px;
+ font-weight: bold;
+ padding: 15px 20px;
+ border-radius: 50px;
+letter-spacing: 1px;
+ transition: all 0.3s ease;
+ border: 2px solid rgba(255,255,255,0.3);
+ }
+.kido6-text a:hover {
+ background: rgba(0, 0, 0, 0.8);
+ border-color: white;
+letter-spacing: 3px;
+ }
+
+.kido7-text {
+    font-size: larger;
+    font-weight: 900;
+    color:yellow;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+ .kido7-text a {
+            display: block;
+            background: rgba(0, 0, 0, 0.6);  /* Black with 60% opacity */
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 20px;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .kido7-text a:hover {
+            background: rgba(0, 0, 0, 0.8);
+            border-color: white;
+            letter-spacing: 3px;
+        }
+
+.kido8-text {
+    font-size: larger;
+    font-weight: 900;
+    color:yellow;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+ .kido8-text a {
+            display: block;
+            background: rgba(0, 0, 0, 0.6);  /* Black with 60% opacity */
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 20px;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .kido8-text a:hover {
+            background: rgba(0, 0, 0, 0.8);
+            border-color: white;
+            letter-spacing: 3px;
+        }
+
+.kido9-text {
+    font-size: larger;
+    font-weight: 900;
+    color:yellow;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+ .kido9-text a {
+            display: block;
+            background: rgba(0, 0, 0, 0.6);  /* Black with 60% opacity */
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 20px;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .kido9-text a:hover {
+            background: rgba(0, 0, 0, 0.8);
+            border-color: white;
+            letter-spacing: 3px;
+        }
+
+
+
+.kido10-text {
+    font-size: larger;
+    font-weight: 900;
+    color:yellow;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+transform: translateY(-50%);
+
+}
+.kido10-text a {
+display: block;
+background: rgba(0, 0, 0, 0.6);  /* Black with 60% opacity */
+color: white;
+text-decoration: none;
+font-size: 24px;
+font-weight: bold;
+padding: 15px 20px;
+border-radius: 50px;
+letter-spacing: 1px;
+transition: all 0.3s ease;
+ border: 2px solid rgba(255,255,255,0.3);
+}
+.kido10-text a:hover {
+background: rgba(0, 0, 0, 0.8);
+border-color: white;
+letter-spacing: 3px;
+}
+.kido11-text {
+font-size: larger;
+font-weight: 900;
+color:yellow;
+position: absolute; /* Pins the text to the parent */
+top: 50%;
+right: 5%;
+ transform: translateY(-50%);
+}
+ .kido11-text a {
+display: block;
+background: rgba(0, 0, 0, 0.6);  /* Black with 60% opacity */
+color: white;
+text-decoration: none;
+font-size: 24px;
+font-weight: bold;
+padding: 15px 20px;
+border-radius: 50px;
+letter-spacing: 1px;
+transition: all 0.3s ease;
+border: 2px solid rgba(255,255,255,0.3);
+}
+
+.kido11-text a:hover {
+background: rgba(0, 0, 0, 0.8);
+border-color: white;
+letter-spacing: 3px;
+}
+.kido12-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.kido12-image{
+    width: 100%;
+    display: block;
+
+}
+.kido12-text {
+    font-size: larger;
+    font-weight: 900;
+    color:white;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.gallery1{
+display: inline-block;
+border: 1px solid #ccc;
+margin: 1px;
+width: 19.11%;
+position: relative;
+overflow: hidden;
+border-radius: 15px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery1:hover{ 
+    border: 1px solid #000;
+
+
+       transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+
+
+}
+.gallery1 img{
+width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+.kido-text13 {
+  position: absolute; /* Lifts the text out of the normal layout */
+  top: 50%;           /* Moves it 50% down from the top */
+  left: 50%;          /* Moves it 50% across from the left */
+  transform: translate(-50%, -50%); /* Perfectly centers the text */
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 10px;
+  pointer-events: none; /* Allows clicks to pass through the text to the image/link */
+}
+.footer-content1{
+text-align: center;
+background: #666;
+border-radius: 2rem;
+box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+padding: 2rem;
+
+}
+.footer-content2{
+    text-align: center;
+    background-color: #575555;
+
+     border-radius: 2rem;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+div.footer-content1{
+    margin: 0px;
+}
+
+.footer-content3 {
+  background: #3f3e3e;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-top: 3px solid #c49a6c;
+
+   border-radius: 2rem;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.intro1 {
+  color: #c49a6c;
+  font-size: 28px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.footer-content3 a {
+  color: #999;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px 10px;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.footer-content3 a:hover {
+  color: #c49a6c;
+}
+
+.footer-content3 p {
+  color: #666;
+  font-size: 13px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-content3 p a {
+  color: #c49a6c;
+  margin: 0;
+}
+.gallerya1a{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.gallery1a-image1{
+    width: 100%;
+    display: block;
+
+}
+.gallery1a-text {
+    font-size: larger;
+    font-weight: 900;
+    color:#ffffff;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+
+}
+
+.gallery2{
+display: inline-block;
+border: 1px solid #ccc;
+margin: 1px;
+width: 49.3%;
+position: relative;
+overflow: hidden;
+border-radius: 15px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery2:hover{ 
+border: 1px solid #000;
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.gallery2 img{
+width: 100%;
+height: 50vh;
+display: block;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+.gallery-text1 {
+  position: absolute; /* Lifts the text out of the normal layout */
+  top: 50%;           /* Moves it 50% down from the top */
+  left: 50%;          /* Moves it 50% across from the left */
+  transform: translate(-50%, -50%); /* Perfectly centers the text */
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 10px;
+  pointer-events: none; /* Allows clicks to pass through the text to the image/link */
+}
+.gallery3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.gallery1-image3{
+    width: 100%;
+    display: block;
+
+}
+.gallery-text3 {
+    font-size: larger;
+    font-weight: 900;
+    color:yellow;
+    position: absolute; /* Pins the text to the parent */
+    top: 50%;
+    right: 40%;
+    transform: translateY(-50%);
+
+}
+.p-text {
+    font-size: 14px;
+    color: #333;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: initial;
+}
+
+/* .gallery4{
+display: inline-block;
+border: 1px solid #ccc;
+margin: 1px;
+width: 33.001%;
+position: relative;
+overflow: hidden;
+border-radius: 15px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery4:hover{ 
+border: 1px solid #000;
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.gallery4 img{
+width: 100%;
+height: 40vh;
+display: block;
+object-fit: cover;
+transition: transform 0.5s ease;
+} */
+.container {
+  font-size: 0; /* Removes white space between inline-block elements */
+}
+
+.gallery4 {
+  display: inline-block;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.gallery4 img {
+  width: 100%;
+  height: auto;
+}
+.gallery4:hover{ 
+border: 1px solid #000;
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.gallery5{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    margin: 10px 0;
+}
+.gallery1-image5{
+    width: 100%;
+    display: block;
+}
+.gallery6 {
+  display: inline-block;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.gallery6 img {
+  width: 100%;
+  height: auto;
+}
+.gallery6:hover{ 
+border: 1px solid #000;
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+.p-textl {
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    font-size: 14px;
+    color: #333;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.explore-button1{
+  background: transparent;      /* Makes it hollow */
+  border: 2px solid white;     /* Sets the outline */
+  color: white;                /* Sets the text color */
+  padding: 12px 40px;          /* Vertical and horizontal space */
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;         /* Creates that wide, elegant look */
+  text-transform: uppercase;   /* Ensures text is caps */
+  cursor: pointer;
+  transition: all 0.3s ease;   /* Smooth hover transition */
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust as needed */
+  background-color:burlywood; 
+}
+.explore-button1:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
